@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+}
+
+.wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    perspective: 100px;
+}
+
+header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.parallax-item{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;  
+    z-index: -1; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.ciel{
+    transform: translateZ(-400px) scale(5);
+}
+
+.nuage{
+    transform: translateZ(-250px) scale(3.5);
+}
+
+.nuage2{
+    transform: translateZ(-100px) scale(2);
+}
+
+.nuage3{
+    transform: translateZ(-100px) scale(2);
+}
+
+.titre{
+    font-size: 5em;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+section{
+    display: flex;
+    font-size: 3em;
+   text-align: center;
+   align-self: center;
+   background-color:white;
+}
